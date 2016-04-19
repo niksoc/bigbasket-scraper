@@ -5,6 +5,7 @@ Collects product details from Bigbasket and stores it in a MySQL database for da
 
 ##Usage
 *All instructions assume usage of python3.*
+
 1. Execute the commands in mysql_setup in the mysql shell.
 2. Install requirements with `pip install -r requirements.txt`.
 3. Download phantomjs from [here](https://dn-cnpm.qbox.me/dist/phantomjs/phantomjs-2.1.1-linux-x86_64.tar.bz2) for linux or from an appropriate source and place the executable found in the bin directory into the project directory. 
