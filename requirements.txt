@@ -1,0 +1,4 @@
+BeautifulSoup4==4.4.1
+selenium==2.53.1
+requests==2.9.1
+pymysql==0.7.2

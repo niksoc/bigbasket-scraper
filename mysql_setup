@@ -1,0 +1,7 @@
+create database bbdata;
+alter database bbdata charset=utf8;
+create table brands( id int unsigned not null auto_increment primary key, name varchar(50) not null, unique(name));
+create table categories( id int unsigned not null auto_increment primary key, name varchar(50) not null, unique(name));
+create table cities( id int unsigned not null auto_increment primary key, name varchar(50) not null, unique(name));
+create table prod_cat( cat_id int unsigned not null, prod_id int unsigned not null);
+create table products( id int unsigned primary key auto_increment not null, prod_name varchar(70) not null, brand_id int unsigned null, price float not null, discount float not null, quantity float not null, unit varchar(10) null, city_id int unsigned not null, unique(city_id,prod_name));
