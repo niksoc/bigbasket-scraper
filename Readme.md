@@ -1,8 +1,6 @@
 #Bigbasket Scraper
 Collects product details from Bigbasket and stores it in a MySQL database for data analysis. Product name, price, discount, categories, quantity, unit, brand and cityname are collected. A crawl delay of approx. 10 seconds is in place. Written in Python v3.
 
----------------------------------
-
 ##Usage
 *All instructions assume usage of python3.*
 
@@ -18,16 +16,12 @@ which_categories = [0, 1]
 ``` 
 The indices correspond to the order the top level categories are displayed in [their categories page](http://www.bigbasket.com/product/all-categories/)
 
----------------------------------
-
 ##Tools/Libraries used
 - Selenium w/PhantomJS
 - Requests
 - BeautifulSoup4
 - pymysql
  
----------------------------------
-
 ##Data Organisation
 ```
 mysql> show tables;
