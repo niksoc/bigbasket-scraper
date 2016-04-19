@@ -66,6 +66,6 @@ mysql> describe prod_cat;
 | prod_id | int(10) unsigned | NO   |     | NULL    |       |
 +---------+------------------+------+-----+---------+-------+
 ```
-This table contains the product id and the category id of the category it belongs to. There may be be more than one category for a product, and there will be multiple rows.
+The prod_cat table contains the product id and the category id of the category it belongs to. There may be be more than one category for a product, and there will be multiple rows.
 
 The other tables just contain the id and name columns.
