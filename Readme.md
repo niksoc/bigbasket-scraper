@@ -29,10 +29,8 @@ The indices correspond to the order the top level categories are displayed in [t
 ---------------------------------
 
 ##Data Organisation
-```sql
-show tables;
 ```
-<pre>
+mysql> show tables;
 +------------------+
 | Tables_in_bbdata |
 +------------------+
@@ -43,11 +41,9 @@ show tables;
 | products         |
 | test             |
 +------------------+ 
-</pre>
-```sql
-describe products;
-```
-<pre>
+
+mysql> describe products;
+
 +-----------+------------------+------+-----+---------+----------------+
 | Field     | Type             | Null | Key | Default | Extra          |
 +-----------+------------------+------+-----+---------+----------------+
@@ -60,20 +56,16 @@ describe products;
 | unit      | varchar(10)      | YES  |     | NULL    |                |
 | city_id   | int(10) unsigned | NO   | MUL | NULL    |                |
 +-----------+------------------+------+-----+---------+----------------+
-</pre>
 
-```sql
-describe prod_cat;
-```
-<pre>
+mysql> describe prod_cat;
+
 +---------+------------------+------+-----+---------+-------+
 | Field   | Type             | Null | Key | Default | Extra |
 +---------+------------------+------+-----+---------+-------+
 | cat_id  | int(10) unsigned | NO   |     | NULL    |       |
 | prod_id | int(10) unsigned | NO   |     | NULL    |       |
 +---------+------------------+------+-----+---------+-------+
-</pre>
-
+```
 This table contains the product id and the category id of the category it belongs to. There may be be more than one category for a product, and there will be multiple rows.
 
 The other tables just contain the id and name columns.
