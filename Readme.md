@@ -15,7 +15,7 @@ Was written as a learning exercise and does not have a UI of any sort in place. 
 ```python
 which_categories = [0, 1]
 ``` 
-The indices correspond to the order the top level categories are displayed in [their categories page](http://www.bigbasket.com/product/all-categories/)
+The indices correspond to the order the top level categories are displayed in Bigbasket's [categories page](http://www.bigbasket.com/product/all-categories/) 
 
 ##Tools/Libraries used
 - Selenium w/PhantomJS
